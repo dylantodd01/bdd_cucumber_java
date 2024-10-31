@@ -21,6 +21,15 @@ public class CalculatorStepDefinitions {
         calc.push(int2);
         calc.push("+");
     }
+
+    @When("I subtract {int} from {int}")
+    public void i_subtract_from(Integer int1, Integer int2) {
+        // Write code here that turns the phrase above into concrete actions
+        calc.push(int1);
+        calc.push(int2);
+        calc.push("-");
+    }
+
     @Then("the result is {double}")
     public void the_result_is(double expected) {
         // Write code here that turns the phrase above into concrete actions
